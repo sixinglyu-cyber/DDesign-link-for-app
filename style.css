@@ -1,0 +1,145 @@
+:root {
+  --bg: #140b22;
+  --card: #2a1844;
+  --text: #fff4e5;
+  --orange: #ff8a1e;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
+  color: var(--text);
+  text-align: center;
+  background:
+    radial-gradient(circle at 80% 0%, #4a2878 0%, transparent 32%),
+    var(--bg);
+}
+
+.wrap {
+  width: min(460px, 92%);
+  margin: 0 auto;
+  padding: 36px 0 48px;
+}
+
+.tag {
+  margin: 0;
+  color: var(--orange);
+  letter-spacing: 0.22em;
+  font-size: 13px;
+}
+
+h1 {
+  margin: 8px 0;
+  font-size: 42px;
+}
+
+#greeting {
+  margin: 0;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+}
+
+#pumpkin {
+  margin-top: 12px;
+  font-size: 104px;
+  line-height: 1;
+}
+
+#pumpkin.lit {
+  filter: drop-shadow(0 0 18px var(--orange));
+}
+
+#candy {
+  display: block;
+  width: 100%;
+  margin: 6px 0 0;
+  padding: 0;
+  font-size: 22px;
+  font-weight: 700;
+  color: inherit;
+}
+
+#candy:hover {
+  color: var(--orange);
+}
+
+.card {
+  margin-top: 22px;
+  padding: 18px 16px 16px;
+  background: var(--card);
+  border-radius: 18px;
+  border-top: 4px solid var(--orange);
+}
+
+h2 {
+  margin: 28px 0 8px;
+  font-size: 20px;
+}
+
+.card h2 {
+  margin: 0 0 8px;
+}
+
+#spell {
+  margin: 0;
+}
+
+#spellBtn {
+  margin-top: 14px;
+  padding: 10px 22px;
+  border-radius: 999px;
+  background: var(--orange);
+  color: #2a1204;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+#spellBtn:hover {
+  background: #ffb347;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-top: 8px;
+  padding: 10px 12px;
+  background: var(--card);
+  border-radius: 12px;
+  cursor: grab;
+}
+
+li.dragging {
+  opacity: 0.4;
+}
+
+#bin {
+  margin: 12px 0 0;
+  padding: 10px 12px;
+  color: #d7c4a8;
+  border: 2px dashed #d7c4a8;
+  border-radius: 12px;
+}
+
+#bin.over {
+  color: #2a1204;
+  background: var(--orange);
+  border-color: var(--orange);
+}
+
+.sign {
+  margin: 28px 0 0;
+  color: #d7c4a8;
+  font-size: 14px;
+}
+
+
